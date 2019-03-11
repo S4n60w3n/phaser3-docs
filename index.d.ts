@@ -759,6 +759,9 @@ declare type GameConfig = {
      * The Scale Manager configuration.
      */
     scale?: ScaleConfig;
+
+    transparent: boolean;
+    audio: any;
 };
 
 declare type TimeStepCallback = (time: number, average: number, interpolation: number)=>void;
@@ -10026,7 +10029,7 @@ declare namespace Phaser {
          * The parsed XML object is returned, or `null` if there was an error while parsing the data.
          * @param data The XML source stored in a string.
          */
-        function ParseXML(data: string): DOMParser | ActiveXObject;
+        function ParseXML(data: string): DOMParser | any;
 
         /**
          * Attempts to remove the element from its parentNode in the DOM.
