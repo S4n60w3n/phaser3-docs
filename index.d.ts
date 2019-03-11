@@ -760,8 +760,8 @@ declare type GameConfig = {
      */
     scale?: ScaleConfig;
 
-    transparent: boolean;
-    audio: any;
+    transparent?: boolean;
+    audio?: any;
 };
 
 declare type TimeStepCallback = (time: number, average: number, interpolation: number)=>void;
